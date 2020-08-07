@@ -1,6 +1,6 @@
-# test 4
+# ReadmeGenerator
   ## Description
-  description
+  This is a readme generator created for GT Bootcamp.
   ## Table of contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,24 +12,24 @@
   * [Questions](#questions)
   
   ## Installation
-  install
+  Download and run.
 
   ## Usage
-  usage
+  Use as according to license.
 
   ## Credits
 
 
   ## Questions
-  preston
-  bradford
+  Preston Bradford
+  Psbradford4100@att.net
 
   ## Contribution
   
 
   ## Tests
-  undefined
+  Test it.
 
   ## License
-  Copyright <YEAR> <preston>
-  undefined
+  This project is licensed under the MIT license.
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)

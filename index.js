@@ -1,4 +1,7 @@
 // array of questions for user
+var fs = require('fs');
+var path = require("path");
+
 var inquirer = require("inquirer");
 
 var genMark = require("./utils/generateMarkdown");
@@ -46,27 +49,16 @@ const questions = [
   },
   {
     type: 'list',
-    name: 'value',
+    name: 'license',
     message: 'Pick a license:',
-    choices: [
-      {
-        title: 'MIT', value: "mit"},
-      { title: 'GNU', value: 'gnu' },
-      { title: 'Apache', value: 'apache' }
-    ],
-    initial: 1
+    choices: ["MIT", "Apache", "GNU"],
+    default: "MIT"
   }
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-
-  var fs = require('fs');
-
-  fs.writeFile(fileName, data, function (err) {
-    if (err) throw err;
-    console.log('File written successfully.');
-  });
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 // function to initialize program

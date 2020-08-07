@@ -33,8 +33,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## License
-  Copyright <YEAR> <${data.username}>
-  ${data.license}
+  This project is licensed under the ${data.license} license.
+  ![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 `;
 }
 
